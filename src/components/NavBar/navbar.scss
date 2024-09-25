@@ -1,10 +1,12 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 
     .categories {
         display: flex;
         list-style: none;
+        gap: 25px;
     }
 
     .cartwidget {

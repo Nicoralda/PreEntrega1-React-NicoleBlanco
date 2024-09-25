@@ -10,10 +10,10 @@ const NavBar = () => {
             </div>
 
             <ul className='categories'>
-                <li>Pecheras</li>
-                <li>Bolsitos</li>
-                <li>Juguetes</li>
-                <li>Accesorios</li>
+                <li><a href="#">Pecheras</a></li>
+                <li><a href="#">Bolsitos</a></li>
+                <li><a href="#">Juguetes</a></li>
+                <li><a href="#">Accesorios</a></li>
             </ul>
 
             <CartWidget />
