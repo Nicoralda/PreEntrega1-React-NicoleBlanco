@@ -1,5 +1,6 @@
 import CartWidget from './CartWidget'
 import logo from '../../assets/logotipo-amazon.webp'
+import { Link } from "react-router-dom"
 import './navbar.scss'
 
 const NavBar = () => {
@@ -10,10 +11,15 @@ const NavBar = () => {
             </div>
 
             <ul className='categories'>
-                <li><a href="#">Pecheras</a></li>
-                <li><a href="#">Bolsitos</a></li>
-                <li><a href="#">Juguetes</a></li>
-                <li><a href="#">Accesorios</a></li>
+                <li className='category'>
+                    <Link to='/category/bolsos' className='link-text'>Bolsitos</Link>
+                </li>
+                <li className='category'>
+                    <Link to='/category/pecheras' className='link-text'>Pecheras</Link>
+                </li>
+                <li className='category'>
+                    <Link to='/category/basicos' className='link-text'>Básicos</Link>
+                </li>
             </ul>
 
             <CartWidget />
