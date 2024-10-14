@@ -12,11 +12,9 @@ const ItemListContainer = ({ greeting }) => {
         getProducts()
             .then((data) => {
                 if (idCategory) {
-                    // Filtrar la data por la categoría
                     const filterProducts = data.filter((product) => product.category === idCategory)
                     setProducts(filterProducts)
                 } else {
-                    // Guardar la lista completa
                     setProducts(data)
                 }
             })
@@ -31,9 +29,10 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         <div className="itemlistcontainer">
-            <h1>{greeting}</h1>
+            <h1 className="greeting">{greeting}</h1>
             <ItemList products={products} />
         </div>
     )
 }
+
 export default ItemListContainer

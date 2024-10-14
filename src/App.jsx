@@ -15,6 +15,8 @@ function App() {
           <Route path="/" element={ <ItemListContainer greeting="¡Hola! Gracias por estar aquí" /> } />
           <Route path="/category/:idCategory" element={ <ItemListContainer greeting="¡Hola! Gracias por estar aquí" /> } />
           <Route path="/detail/:idProduct" element={<ItemDetailContainer />} />
+
+          <Route path="*" element={<div>Error: 404, la ruta no existe</div>}/>
         </Routes>
       </BrowserRouter>
     </div>

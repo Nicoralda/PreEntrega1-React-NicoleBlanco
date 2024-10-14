@@ -1,24 +1,24 @@
 import CartWidget from './CartWidget'
-import logo from '../../assets/logotipo-amazon.webp'
-import { Link } from "react-router-dom"
+import logo from '../../assets/garra_urbana_remove.png'
+import { Link, NavLink } from "react-router-dom"
 import './navbar.scss'
 
 const NavBar = () => {
     return (
         <nav className='navbar'>
-            <div className='brand'>
+            <Link to='/' className='brand'>
                 <img src={logo} alt="" width={130}/>
-            </div>
+            </Link>
 
             <ul className='categories'>
                 <li className='category'>
-                    <Link to='/category/bolsos' className='link-text'>Bolsitos</Link>
+                    <NavLink to='/category/bolsos' className= { ({isActive})=> ( isActive ? 'active-link' : '') + ' base-link' } >Bolsitos</NavLink>
                 </li>
                 <li className='category'>
-                    <Link to='/category/pecheras' className='link-text'>Pecheras</Link>
+                    <NavLink to='/category/pecheras' className= { ({isActive})=> ( isActive ? 'active-link' : '') + ' base-link' } >Pecheras</NavLink>
                 </li>
                 <li className='category'>
-                    <Link to='/category/basicos' className='link-text'>Básicos</Link>
+                    <NavLink to='/category/basicos' className= { ({isActive})=> ( isActive ? 'active-link' : '') + ' base-link' } >Básicos</NavLink>
                 </li>
             </ul>
 

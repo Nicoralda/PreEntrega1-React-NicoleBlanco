@@ -6,7 +6,7 @@ const products = [
         description: '',
         price: 12,
         stock: 5,
-        image: '',
+        image: '/src/assets/prod1.png',
         category: 'bolsos'
     },
     {
@@ -15,7 +15,7 @@ const products = [
         description: '',
         price: 12,
         stock: 5,
-        image: '',
+        image: '/src/assets/prod2.png',
         category: 'bolsos'
     },
     {
@@ -24,7 +24,7 @@ const products = [
         description: '',
         price: 15,
         stock: 5,
-        image: '',
+        image: '/src/assets/prod3.png',
         category: 'bolsos'
     },
     {
@@ -33,7 +33,7 @@ const products = [
         description: '',
         price: 18,
         stock: 5,
-        image: '',
+        image: '/src/assets/prod4.png',
         category: 'pecheras'
     },
     {
@@ -42,7 +42,7 @@ const products = [
         description: '',
         price: 18,
         stock: 5,
-        image: '',
+        image: '/src/assets/prod5.png',
         category: 'pecheras'
     },
     {
@@ -51,7 +51,7 @@ const products = [
         description: '',
         price: 12,
         stock: 5,
-        image: '',
+        image: '/src/assets/prod6.png',
         category: 'pecheras'
     },
     {
@@ -60,16 +60,16 @@ const products = [
         description: '',
         price: 15,
         stock: 5,
-        image: '',
+        image: '/src/assets/prod7.png',
         category: 'pecheras'
     },
     {
         id: 'prod8',
-        name: 'Hoodie con capucha',
+        name: 'Hoodie básico con capucha',
         description: '',
         price: 15,
         stock: 5,
-        image: '',
+        image: '/src/assets/prod8.png',
         category: 'basicos'
     },
     {
@@ -78,27 +78,26 @@ const products = [
         description: '',
         price: 8,
         stock: 5,
-        image: '',
+        image: '/src/assets/prod9.png',
         category: 'basicos'
     },
     {
         id: 'prod10',
-        name: 'Hoodie sencillo',
+        name: 'Hoodie colorido con capucha',
         description: '',
         price: 12,
         stock: 5,
-        image: '',
+        image: '/src/assets/prod10.png',
         category: 'basicos'
     },
 ];
 
-// Obtiene los productos
 const getProducts = () => {
     return new Promise((resolve, reject) => {
 // Simula un retraso de red
         setTimeout(() => {
             resolve(products)
-        }, 2000)
+        }, 1000)
     })
 }
 
@@ -107,7 +106,7 @@ const getProduct = (idProduct) => {
         setTimeout(() => {
             const product = products.find((product) => product.id === idProduct)
             resolve(product)
-        }, 2000)
+        }, 1000)
     })
 }
 

@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    background-color: #c2ccff;
 
     .categories {
         display: flex;
@@ -9,7 +9,21 @@
         gap: 25px;
     }
 
-    .cartwidget {
-        display: flex;
+    .base-link {
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(46, 26, 138);
+        font-weight: 600;
     }
+
+    .cartwidget{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.active-link {
+    color: #6276da;
+    font-weight: 800;
 }

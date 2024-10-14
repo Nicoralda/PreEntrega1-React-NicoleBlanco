@@ -10,4 +10,5 @@ const Item = ({ product }) => {
         </div>
     )
 }
+
 export default Item

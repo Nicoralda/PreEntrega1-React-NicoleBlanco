@@ -1,1 +1,52 @@
-//Nada todavía
+.itemlistcontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.itemlistcontainer .itemlist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.itemlistcontainer .item {
+    width: 150px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #c2ccff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item .img-item {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item .text-item {
+    padding: 10px 0;
+}
+
+.item .button-detail {
+    width: 60px;
+    padding: 10px;
+    background-color: #c2ccff;
+    border-radius: 20px;
+    border: 2px solid #6276da;
+}
+
+.item .button-detail:hover {
+    transition: 0.2s;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.4);
+    transform: translate(0%);
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #3a32ad;
+}
